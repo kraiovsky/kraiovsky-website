@@ -4,10 +4,27 @@
     "es6": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "standard"],
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "standard-jsx",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/standard",
+    "plugin:react-hooks/recommended",
+    "plugin:promise/recommended",
+    "plugin:jest/all",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jsdoc/recommended",
+    "prettier"
+  ],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "React": "writable"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -17,6 +34,19 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
-  "rules": {}
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier",
+    "standard",
+    "jsx-a11y",
+    "promise",
+    "jest",
+    "jsdoc"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off"
+  }
 }
