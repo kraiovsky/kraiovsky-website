@@ -8,17 +8,16 @@
     "eslint:recommended",
     "standard",
     "standard-jsx",
-    "plugin:import/errors",
-    "plugin:import/typescript",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "prettier/react",
-    "prettier/standard",
-    "plugin:react-hooks/recommended",
-    "plugin:promise/recommended",
     "plugin:jest/all",
     "plugin:jsx-a11y/recommended",
     "plugin:jsdoc/recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:promise/recommended",
+    "prettier/react",
+    "prettier/standard",
     "prettier"
   ],
   "globals": {
@@ -26,7 +25,7 @@
     "SharedArrayBuffer": "readonly",
     "React": "writable"
   },
-  "parser": "@typescript-eslint/parser",
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -36,7 +35,6 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint",
     "react-hooks",
     "prettier",
     "standard",
@@ -47,6 +45,8 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off"
+    "import/first": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsdoc/require-jsdoc": "off"
   }
 }
