@@ -1,0 +1,21 @@
+@base_url = http://localhost:3000/api
+
+### Healthcheck
+GET {{base_url}}/ping HTTP/1.1
+Content-Type: application/json
+
+### Index
+GET {{base_url}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "msg": "test"
+}
+
+### Catch-all unknown route
+GET {{base_url}}/unknown HTTP/1.1
+Content-Type: application/json
+
+{
+  "msg": "test"
+}

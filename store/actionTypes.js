@@ -1,0 +1,1 @@
+export const PAGE_TITLE_CHANGE = 'PAGE_TITLE_CHANGE'

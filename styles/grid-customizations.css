@@ -1,0 +1,41 @@
+/* Grid positioning */
+/* Applied to all screen sizes */
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.top {
+  align-self: start;
+}
+.bottom {
+  align-self: end;
+}
+.middle {
+  align-self: center;
+}
+
+/* Mobile screens customizations */
+@media only screen and (max-width: 960px) {
+  [position-s="center"] { text-align: center; }
+  [position-s="left"] { text-align: left; }
+  [position-s="right"] { text-align: right; }
+  [position-s="top"] { align-self: start; }
+  [position-s="middle"] { align-self: center; }
+  [position-s="bottom"] { align-self: end; }
+}
+
+/* Desktop screens customizations */
+@media only screen and (min-width: 960px) {
+  [position="center"] { text-align: center; }
+  [position="left"] { text-align: left; }
+  [position="right"] { text-align: right; }
+  [position="top"] { align-self: start; }
+  [position="middle"] { align-self: center; }
+  [position="bottom"] { align-self: end; }
+}
+/* ---------------- */

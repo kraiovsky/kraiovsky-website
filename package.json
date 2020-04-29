@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "debug": "NODE_OPTIONS='--inspect' next",
     "build": "next build",
     "start": "next start",
     "test": "NODE_ENV=development jest --passWithNoTests"
@@ -13,8 +14,10 @@
     "faunadb": "^2.13.1",
     "immutability-helper": "^3.0.2",
     "ky": "^0.19.1",
-    "ky-universal": "^0.5.0",
+    "ky-universal": "^0.6.0",
     "next": "9.3.5",
+    "pino": "^6.2.1",
+    "pino-http": "^5.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "^7.2.0",
@@ -38,6 +41,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^25.3.0",
+    "pino-pretty": "^4.0.0",
     "prettier": "^2.0.4",
     "prop-types": "^15.7.2"
   }

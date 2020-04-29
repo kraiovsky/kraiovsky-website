@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:root {
+  --brand-grey: #262626;
+  --brand-light-grey: #959595;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--brand-grey);
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+[color="white"] {
+  color: white;
+}
+[color="light-grey"] {
+  color: var(--brand-light-grey)
+}
+[color="grey"] {
+  color: var(--brand-grey)
+}
