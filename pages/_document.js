@@ -1,7 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import config from '../config'
-
-const { WEBSITE_TITLE } = config()
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -13,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>{WEBSITE_TITLE}</title>
           <link rel="icon" href="/assets/favicon.ico" />
         </Head>
         <body>
