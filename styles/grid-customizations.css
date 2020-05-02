@@ -27,6 +27,12 @@
   [position-s="top"] { align-self: start; }
   [position-s="middle"] { align-self: center; }
   [position-s="bottom"] { align-self: end; }
+  .desktop {
+    display: none;
+  }
+  .padded {
+    padding: 5px 10px;
+  }
 }
 
 /* Desktop screens customizations */
@@ -37,5 +43,11 @@
   [position="top"] { align-self: start; }
   [position="middle"] { align-self: center; }
   [position="bottom"] { align-self: end; }
+  .mobile {
+    display: none;
+  }
+  .padded {
+    padding: 10px 15px;
+  }
 }
 /* ---------------- */
