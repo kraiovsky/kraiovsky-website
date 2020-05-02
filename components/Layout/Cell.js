@@ -9,6 +9,7 @@ const Cell = ({
   top,
   desktop,
   mobile,
+  padded,
   className,
   children,
   ...props
@@ -21,6 +22,7 @@ const Cell = ({
       top,
       desktop,
       mobile,
+      padded,
     },
     className?.split(' '),
   )
@@ -38,6 +40,7 @@ Cell.propTypes = {
   top: PropTypes.bool,
   desktop: PropTypes.bool,
   mobile: PropTypes.bool,
+  padded: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.any,
   position: PropTypes.string,

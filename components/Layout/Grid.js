@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-const Grid = ({ desktop, mobile, className, children, ...props }) => {
+const Grid = ({ desktop, mobile, padded, className, children, ...props }) => {
   const gridClass = classNames(
     {
       desktop,
       mobile,
+      padded,
     },
     className?.split(' '),
   )
@@ -20,6 +21,7 @@ const Grid = ({ desktop, mobile, className, children, ...props }) => {
 Grid.propTypes = {
   desktop: PropTypes.bool,
   mobile: PropTypes.bool,
+  padded: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.any,
   props: PropTypes.shape({
