@@ -8,7 +8,7 @@ const config = {
   },
   production: {
     ...defaultConfig,
-    BASE_URL: 'http://',
+    BASE_URL: process.env.BASE_URL,
   },
 }
 const env = process.env.NODE_ENV || 'development'
