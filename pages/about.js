@@ -34,7 +34,17 @@ const About = () => {
         <Typed strings={['About']} typeSpeed={60} loop={false} className="h1" />
       </Cell>
       <Cell span="5-8" span-s="row">
-        <p>This website is built and deployed with Vercel.</p>
+        <p>
+          This website is built with{' '}
+          <a alt="nextjs" href="https://nextjs.org/">
+            Next.js
+          </a>{' '}
+          and deployed with{' '}
+          <a alt="vercel" href="https://vercel.com/">
+            Vercel
+          </a>
+          .
+        </p>
       </Cell>
       <Cell span="5-8" span-s="row">
         <Healthcheck status={pingSuccess} />
