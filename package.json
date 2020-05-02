@@ -10,6 +10,11 @@
     "test": "NODE_ENV=development jest --passWithNoTests"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "classnames": "^2.2.6",
     "faunadb": "^2.13.1",
     "immutability-helper": "^3.0.2",
@@ -21,6 +26,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "^7.2.0",
+    "react-typed": "^1.2.0",
     "redux": "^4.0.5",
     "sass": "^1.26.3"
   },

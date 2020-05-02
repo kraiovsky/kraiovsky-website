@@ -7,7 +7,7 @@ const { WEBSITE_TITLE } = config()
 
 const Wrapper = ({ children }) => {
   const state = useSelector((state) => state)
-  const { pageTitle } = state
+  const { pageTitle, darkTheme } = state
 
   return (
     <>
@@ -16,7 +16,7 @@ const Wrapper = ({ children }) => {
           {WEBSITE_TITLE} - {pageTitle}
         </title>
       </Head>
-      {children}
+      <div theme={darkTheme ? 'dark' : 'light'}>{children}</div>
     </>
   )
 }

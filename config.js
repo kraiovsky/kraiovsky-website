@@ -1,5 +1,5 @@
 const defaultConfig = {
-  WEBSITE_TITLE: 'JAMStack Starter',
+  WEBSITE_TITLE: 'Roman Kraiovsky',
 }
 const config = {
   development: {
