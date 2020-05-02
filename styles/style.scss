@@ -1,4 +1,32 @@
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap);
-@import 'grid.css';
-@import 'grid-customizations.css';
-@import 'common.css';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import 'grid.css', 'grid-customizations.css', 'common';
+
+.h1 {
+  font-family: 'Nova Square', cursive;
+  font-size: 36px;
+}
+
+.h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.healthcheck {
+  code {
+    font-size: 1.2em;
+  }
+  .pinging {
+    font-style: italic;
+  }
+  .up {
+    color: green;
+  }
+  .down {
+    color: red;
+  }
+}
+
+.social-icon {
+  margin-right: 5px;
+}
