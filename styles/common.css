@@ -23,6 +23,19 @@ body {
   font-weight: 400;
 }
 
+ul {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+li {
+  padding-top: 3px;
+}
+
+a {
+  color: var(--brand-grey);
+}
+
 [color="white"] {
   color: white;
 }
@@ -31,4 +44,8 @@ body {
 }
 [color="grey"] {
   color: var(--brand-grey)
+}
+
+[font-style="italic"] {
+  font-style: italic;
 }
