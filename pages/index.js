@@ -60,7 +60,7 @@ const Home = () => {
       <Cell span="5-8" span-s="row" className="get-in-touch">
         <div className="h2">Get in touch</div>
         <span className="social-icon">
-          <a alt="github" href="https://github.com/rkrayovskyy">
+          <a alt="github" href="https://github.com/kraiovsky">
             <FontAwesomeIcon icon={faGithubSquare} color="grey" size="2x" />
           </a>
         </span>
@@ -78,17 +78,14 @@ const Home = () => {
       <Cell span="5-8" span-s="row">
         <div className="h2">Projects</div>
         <p>
-          <a
-            alt="get-it-done"
-            href="https://github.com/rkrayovskyy/get-it-done"
-          >
+          <a alt="get-it-done" href="https://github.com/kraiovsky/get-it-done">
             Get It Done
           </a>
           <br />
           Command line and Web tool to assign tasks among your team members.
         </p>
         <p>
-          <a alt="get-it-done" href="https://github.com/rkrayovskyy/exacta">
+          <a alt="get-it-done" href="https://github.com/kraiovsky/exacta">
             Exacta
           </a>
           <br />
