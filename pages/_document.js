@@ -32,7 +32,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/assets/favicon.ico" />
+          <link rel="icon" href="/assets/favicon.png" />
         </Head>
         <body>
           <Main />
