@@ -6,17 +6,13 @@
   -moz-box-sizing: border-box;
 }
 
-:root {
-  --brand-grey: #262626;
-  --brand-light-grey: #959595;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: var(--brand-grey);
+  color: var(--brand-text-color-primary);
+  background: var(--brand-background-color);
   padding: 0px;
   margin: 0px;
   font-family: 'Ubuntu', sans-serif;
@@ -33,17 +29,17 @@ li {
 }
 
 a {
-  color: var(--brand-grey);
+  color: var(--brand-text-color-primary);
 }
 
-[color="white"] {
-  color: white;
+[text-color="primary"] {
+  color: var(--brand-text-color-primary)
 }
-[color="light-grey"] {
-  color: var(--brand-light-grey)
+[text-color="highlight"] {
+  color: var(--brand-text-color-highlight)
 }
-[color="grey"] {
-  color: var(--brand-grey)
+[text-color="lowlight"] {
+  color: var(--brand-text-color-lowlight)
 }
 
 [font-style="italic"] {

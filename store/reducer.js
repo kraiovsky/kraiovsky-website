@@ -7,7 +7,9 @@ export default (state = initialState, action) => {
     case PAGE_TITLE_CHANGE:
       return update(state, { pageTitle: { $set: action.payload.title } })
     case TOGGLE_THEME:
-      return update(state, { darkTheme: { $set: !state.darkTheme } })
+      return update(state, {
+        theme: { $set: state.theme === 'light' ? 'dark' : 'light' },
+      })
     default:
       return state
   }

@@ -21,7 +21,7 @@ const Home = () => {
   const state = useSelector((state) => state)
   const dispatch = useDispatch()
 
-  const { darkTheme } = state
+  const { theme } = state
   const handleToggleTheme = () => {
     dispatch(toggleTheme())
   }
@@ -54,26 +54,34 @@ const Home = () => {
           <span role="img" aria-label="se-flag">
             🇸🇪
           </span>
-          .
         </p>
       </Cell>
       <Cell span="5-8" span-s="row" className="get-in-touch">
         <div className="h2">Get in touch</div>
         <span className="social-icon">
           <a alt="github" href="https://github.com/kraiovsky">
-            <FontAwesomeIcon icon={faGithubSquare} color="grey" size="2x" />
+            <FontAwesomeIcon
+              icon={faGithubSquare}
+              text-color="primary"
+              size="2x"
+            />
           </a>
         </span>
         <span className="social-icon">
           <a alt="linkedin" href="https://www.linkedin.com/in/rkrayovskyy">
-            <FontAwesomeIcon icon={faLinkedin} color="grey" size="2x" />
+            <FontAwesomeIcon icon={faLinkedin} text-color="primary" size="2x" />
           </a>
         </span>
         <span className="social-icon">
           <a alt="twitter" href="https://twitter.com/kraiovsky">
-            <FontAwesomeIcon icon={faTwitterSquare} color="grey" size="2x" />
+            <FontAwesomeIcon
+              icon={faTwitterSquare}
+              text-color="primary"
+              size="2x"
+            />
           </a>
         </span>
+        <p />
       </Cell>
       <Cell span="5-8" span-s="row">
         <div className="h2">Projects</div>
@@ -108,10 +116,18 @@ const Home = () => {
                 onClick={handleToggleTheme}
                 onKeyPress={handleToggleTheme}
               >
-                {darkTheme ? (
-                  <FontAwesomeIcon icon={faToggleOn} color="grey" size="2x" />
+                {theme === 'dark' ? (
+                  <FontAwesomeIcon
+                    icon={faToggleOn}
+                    text-color="primary"
+                    size="2x"
+                  />
                 ) : (
-                  <FontAwesomeIcon icon={faToggleOff} color="grey" size="2x" />
+                  <FontAwesomeIcon
+                    icon={faToggleOff}
+                    text-color="primary"
+                    size="2x"
+                  />
                 )}
               </span>
             </Cell>
