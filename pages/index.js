@@ -8,7 +8,11 @@ import {
   faLinkedin,
   faGithubSquare,
 } from '@fortawesome/free-brands-svg-icons'
-import { faToggleOn, faToggleOff } from '@fortawesome/free-solid-svg-icons'
+import {
+  faToggleOn,
+  faToggleOff,
+  faCookieBite,
+} from '@fortawesome/free-solid-svg-icons'
 import { Grid, Cell } from '../components/Layout'
 import { setPageTitle, toggleTheme } from '../store/actionCreators'
 import config from '../config'
@@ -106,7 +110,13 @@ const Home = () => {
           <Grid columns="4" columns-s="5">
             <Cell span="3" span-s="4">
               <span>
-                Toggle dark theme (uses cookies to remember your choice)
+                Toggle dark theme (uses cookies{' '}
+                <FontAwesomeIcon
+                  icon={faCookieBite}
+                  text-color="highlight"
+                  size="s"
+                />{' '}
+                to remember your choice)
               </span>
             </Cell>
             <Cell span="1" span-s="1">
