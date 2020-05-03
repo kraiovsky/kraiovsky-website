@@ -114,7 +114,7 @@ const Home = () => {
                 <FontAwesomeIcon
                   icon={faCookieBite}
                   text-color="highlight"
-                  size="s"
+                  size="sm"
                 />{' '}
                 to remember your choice)
               </span>
