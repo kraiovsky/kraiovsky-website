@@ -3,9 +3,11 @@ import Link from 'next/link'
 import { useDispatch } from 'react-redux'
 import ky from 'ky-universal'
 import Typed from 'react-typed'
+import Markdown from 'react-markdown'
 import { Grid, Cell } from '../components/Layout'
 import Healthcheck from '../components/Healthcheck'
 import { setPageTitle } from '../store/actionCreators'
+import Readme from '../README.md'
 
 const pageTitle = 'About'
 
@@ -34,24 +36,30 @@ const About = () => {
         <Typed strings={['About']} typeSpeed={60} loop={false} className="h1" />
       </Cell>
       <Cell span="5-8" span-s="row">
-        <p>
-          This website is built with{' '}
-          <a alt="nextjs" href="https://nextjs.org/">
-            Next.js
-          </a>{' '}
-          and deployed with{' '}
-          <a alt="vercel" href="https://vercel.com/">
-            Vercel
-          </a>
-          .
-        </p>
+        <Markdown source={Readme} />
+      </Cell>
+      <Cell span="5-8" span-s="row">
+        This page is rendered from <code>README.md</code> with
+        <a
+          alt="react-markdown"
+          href="https://github.com/rexxars/react-markdown"
+        >
+          react-markdown
+        </a>{' '}
+        and{' '}
+        <a
+          alt="raw-loader"
+          href="https://github.com/webpack-contrib/raw-loader"
+        >
+          raw-loader
+        </a>
       </Cell>
       <Cell span="5-8" span-s="row">
         <Healthcheck status={pingSuccess} />
       </Cell>
       <Cell span="5-8" span-s="row">
         <Link href="/">
-          <a alt="home">Back home</a>
+          <a alt="home"> Back home</a>
         </Link>
       </Cell>
       <Cell span="row" span-s="row" />
