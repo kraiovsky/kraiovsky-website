@@ -11,6 +11,7 @@
     "plugin:jest/all",
     "plugin:jsx-a11y/recommended",
     "plugin:jsdoc/recommended",
+    "better-styled-components",
     "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
