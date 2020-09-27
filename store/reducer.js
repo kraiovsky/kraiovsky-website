@@ -3,7 +3,7 @@ import { setCookie } from 'nookies'
 import initialState from './initialState'
 import { PAGE_TITLE_CHANGE, TOGGLE_THEME } from './actionTypes'
 
-export default (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case PAGE_TITLE_CHANGE:
       return update(state, { pageTitle: { $set: action.payload.title } })
@@ -21,3 +21,5 @@ export default (state = initialState, action) => {
       return state
   }
 }
+
+export default reducer
