@@ -54,9 +54,9 @@ const Home = () => {
           <span role="img" aria-label="ua-flag">
             🇺🇦
           </span>
-          , currently living and working in Stockholm, Sweden{' '}
+          , currently living and working in London, UK{' '}
           <span role="img" aria-label="se-flag">
-            🇸🇪
+            🇬🇧
           </span>
         </p>
       </Cell>
